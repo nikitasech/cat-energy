@@ -5,8 +5,45 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
+    <header class="main-header">
+      <svg class="main-header__image-logo image-logo">
+        <title>Логотип Cat Energy</title>
+        <use xlink:href="#image-logo"></use>
+      </svg>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+      <svg class="main-header__text-logo text-logo">
+        <use xlink:href="#text-logo"></use>
+      </svg>
 
+      <!-- При открытом состоянии навигации: main-header__menu-toggle--cross -->
+      <button class="main-header__menu-toggle">
+        Открыть меню
+        <svg>
+          <!-- При открытом состоянии навигации: xlink:href="#cross" -->
+          <use xlink:href="#gamburger"></use>
+        </svg>
+      </button>
+
+      <!-- При закрытом состоянии: main-header__nav--closed -->
+      <nav class="main-header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--selected">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+    </main>
+
+    <footer class="main-footer">
+    </footer>
   </body>
 </html>
