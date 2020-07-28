@@ -6,23 +6,25 @@
 </head>
 <body>
   <header class="main-header">
-    <svg class="main-header__image-logo image-logo">
-      <title>Логотип Cat Energy</title>
-      <use xlink:href="#image-logo"></use>
-    </svg>
-
-    <svg class="main-header__text-logo text-logo">
-      <use xlink:href="#text-logo"></use>
-    </svg>
-
-    <!-- При открытом состоянии навигации: main-header__menu-toggle--cross -->
-    <button class="main-header__menu-toggle">
-      Открыть меню
-      <svg>
-        <!-- При открытом состоянии навигации: xlink:href="#cross" -->
-        <use xlink:href="#gamburger"></use>
+    <div class="main-header__inner">
+      <svg class="main-header__image-logo image-logo">
+        <title>Логотип Cat Energy</title>
+        <use xlink:href="#image-logo"></use>
       </svg>
-    </button>
+
+      <svg class="main-header__text-logo text-logo">
+        <use xlink:href="#text-logo"></use>
+      </svg>
+
+      <!-- При открытом состоянии навигации: main-header__menu-toggle--cross -->
+      <button class="main-header__menu-toggle">
+        Открыть меню
+        <svg>
+          <!-- При открытом состоянии навигации: xlink:href="#cross" -->
+          <use xlink:href="#gamburger"></use>
+        </svg>
+      </button>
+    </div>
 
     <!-- При закрытом состоянии: main-header__nav--closed -->
     <nav class="main-header__nav nav">
@@ -31,10 +33,10 @@
           <a class="nav__link" href="index.html">Главная</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link nav__link--selected">Каталог продукции</a>
+          <a class="nav__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="form.html">Подбор программы</a>
+          <a class="nav__link nav__link--selected">Подбор программы</a>
         </li>
       </ul>
     </nav>
