@@ -8,14 +8,14 @@
     <header class="main-header container">
       <div class="main-header__inner">
         <img class="logo logo--image" src="https://via.placeholder.com/34x37" alt="Логотип Cat Energy">
-      <img class="logo logo--text" src="https://via.placeholder.com/101x18" aria-hidden="true">
+        <img class="logo logo--text" src="https://via.placeholder.com/101x18" aria-hidden="true">
 
         <!-- При открытом состоянии навигации: main-header__menu-toggle--cross -->
-        <button class="main-header__menu-toggle">
+        <button class="main-header__menu-toggle" type="button">
           Открыть меню
           <svg>
-            <!-- При открытом состоянии навигации: xlink:href="#cross" -->
-            <use xlink:href="#gamburger"></use>
+            <!-- При открытом состоянии навигации: xlink:href="#icon-cross" -->
+            <use xlink:href="#icon-gamburger"></use>
           </svg>
         </button>
       </div>
@@ -37,7 +37,57 @@
     </header>
 
     <main>
-      <h1 class=""></h1>
+      <h1 class="visually-hidden">Главная страница Cat Energy</h1>
+
+      <section class="preview">
+        <h2 class="visually-hidden">Вступление</h2>
+        <p class="preview__title title">Функциональное питание для котов</p>
+        <p class="preview__text">Занялся собой? Займись котом!</p>
+        <img class="preview__image" src="https://via.placeholder.com/280x270" alt="Фотография куриного доширака для кота">
+        <button class="preview__button button" type="button">Подобрать программу</button>
+      </section>
+
+      <section class="programms">
+        <h2 class="visually-hidden">Наши программы</h2>
+        <ul class="programms__list">
+          <li class="programms__item programm programm--reduce">
+            <h3 class="programm__title">Похудение</h3>
+            <p class="programm__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <button class="programm__button" type="button">Каталог Slim</button>
+          </li>
+          <li class="programms__item programm programm--increase">
+            <h3 class="programm__title">Набор массы</h3>
+            <p class="programm__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <button class="programm__button" type="button">Каталог Pro</button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="explanation">
+        <h2 class="explanation__title title">Как это работает</h2>
+        <ul class="explanation__list">
+          <li class="explanation__item explanation__item--leaf">
+            Функциональное питание
+            содержит только полезные
+            питательные вещества.
+          </li>
+          <li class="explanation__item explanation__item--powder">
+            Выпускается в виде порошка,
+            который нужно лишь залить
+            кипятком и готово.
+          </li>
+          <li class="explanation__item explanation__item--tableware">
+            Замените один-два приема
+            обычной еды на наше
+            функциональное питание.
+          </li>
+          <li class="explanation__item explanation__item--result">
+            Уже через месяц
+            наслаждайтесь изменениями
+            к лучшему вашего питомца!
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer class="main-footer container">
@@ -46,7 +96,7 @@
       <ul class="social">
         <li class="social__item">
           <a href="social__link" href="https://vk.com">
-            <p class="visualy-hidden"></p> Вконтакте
+            <p class="visually-hidden">Вконтакте</p>
             <svg class="social__icon">
               <use xlink:href="#icon-vk"></use>
             </svg>

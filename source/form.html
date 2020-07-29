@@ -1,89 +1,80 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>HTML Academy: Кэт энерджи - Подбор программы</title>
-</head>
-<body>
-  <header class="main-header container">
-    <div class="main-header__inner">
-      <img class="logo logo--image" src="https://via.placeholder.com/34x37" alt="Логотип Cat Energy">
-      <img class="logo logo--text" src="https://via.placeholder.com/101x18" aria-hidden="true">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Кэт энерджи - Подбор программы</title>
+  </head>
+  <body>
+    <header class="main-header container">
+      <div class="main-header__inner">
+        <img class="logo logo--image" src="https://via.placeholder.com/34x37" alt="Логотип Cat Energy">
+        <img class="logo logo--text" src="https://via.placeholder.com/101x18" aria-hidden="true">
 
-      <svg class="main-header__image-logo image-logo">
-        <title>Логотип Cat Energy</title>
-        <use xlink:href="#image-logo"></use>
-      </svg>
+        <!-- При открытом состоянии навигации: main-header__menu-toggle--cross -->
+        <button class="main-header__menu-toggle">
+          Открыть меню
+          <svg>
+            <!-- При открытом состоянии навигации: xlink:href="#icon-cross" -->
+            <use xlink:href="#icon-gamburger"></use>
+          </svg>
+        </button>
+      </div>
 
-      <svg class="main-header__text-logo text-logo">
-        <use xlink:href="#text-logo"></use>
-      </svg>
+      <!-- При закрытом состоянии: main-header__nav--closed -->
+      <nav class="main-header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--selected">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-      <!-- При открытом состоянии навигации: main-header__menu-toggle--cross -->
-      <button class="main-header__menu-toggle">
-        Открыть меню
-        <svg>
-          <!-- При открытом состоянии навигации: xlink:href="#cross" -->
-          <use xlink:href="#icon-gamburger"></use>
-        </svg>
-      </button>
-    </div>
+    <main>
+    </main>
 
-    <!-- При закрытом состоянии: main-header__nav--closed -->
-    <nav class="main-header__nav nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link" href="index.html">Главная</a>
+    <footer class="main-footer container">
+      <img class="logo logo--text" src="https://via.placeholder.com/101x18" alt="Логотип Cat Energy">
+
+      <ul class="social">
+        <li class="social__item">
+          <a href="social__link" href="https://vk.com">
+            <p class="visually-hidden">Вконтакте</p>
+            <svg class="social__icon">
+              <use xlink:href="#icon-vk"></use>
+            </svg>
+          </a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link" href="catalog.html">Каталог продукции</a>
+
+        <li class="social__item">
+          <a href="social__link" href="https://www.fb.com">
+            <p class="visually-hidden">Instagram</p>
+            <svg class="social__icon">
+              <use xlink:href="#icon-insta"></use>
+            </svg>
+          </a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link nav__link--selected">Подбор программы</a>
+
+        <li class="social__item">
+          <a href="social__link" href="https://www.instagram.com">
+            <p class="visually-hidden">Facebook</p>
+            <svg class="social__icon">
+              <use xlink:href="#icon-fb"></use>
+            </svg>
+          </a>
         </li>
       </ul>
-    </nav>
-  </header>
 
-  <main>
-  </main>
-
-  <footer class="main-footer container">
-    <img class="logo logo--text" src="https://via.placeholder.com/101x18" alt="Логотип Cat Energy">
-
-    <ul class="social">
-      <li class="social__item">
-        <a href="social__link" href="https://vk.com">
-          <p class="visualy-hidden"></p> Вконтакте
-          <svg class="social__icon">
-            <use xlink:href="#icon-vk"></use>
-          </svg>
-        </a>
-      </li>
-
-      <li class="social__item">
-        <a href="social__link" href="https://www.fb.com">
-          <p class="visually-hidden">Instagram</p>
-          <svg class="social__icon">
-            <use xlink:href="#icon-insta"></use>
-          </svg>
-        </a>
-      </li>
-
-      <li class="social__item">
-        <a href="social__link" href="https://www.instagram.com">
-          <p class="visually-hidden">Facebook</p>
-          <svg class="social__icon">
-            <use xlink:href="#icon-fb"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-
-    <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
-      <p class="copyright__text">HTML Academy</p>
-      <img class="copyright__image" src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy">
-    </a>
-  </footer>
-</body>
+      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        <p class="copyright__text">HTML Academy</p>
+        <img class="copyright__image" src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy">
+      </a>
+    </footer>
+  </body>
 </html>
