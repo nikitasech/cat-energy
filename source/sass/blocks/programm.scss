@@ -1,0 +1,56 @@
+.programm {
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+
+  background-color: $smoky-white;
+}
+
+.programm__title {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  font-family: Oswald;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    margin-left: -10px;
+
+    background-image: radial-gradient(circle at 50% 50%, $light-green 25px, transparent 25px);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--slim::before {
+    background-image: url("../img/icon-cat-slim.svg"),
+    radial-gradient(circle at 50% 50%, $light-green 25px, transparent 25px);
+    background-size: 36px 50px, auto;
+  }
+
+  &--pro::before {
+    background-image: url("../img/icon-cat-pro.svg"),
+    radial-gradient(circle at 50% 50%, $light-green 25px, transparent 25px);
+    background-size: 67px 28px, auto;
+  }
+}
+
+.programm__text {
+  margin-bottom: 25px;
+}
+
+.programm__link {
+  padding-top: 15px;
+  border-top: 1px solid #d9d9d9;
+}
