@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header container">
       <div class="main-header__inner">
-        <img class="logo logo--image" src="https://via.placeholder.com/34x37" alt="Логотип Cat Energy">
-        <img class="logo logo--text" src="https://via.placeholder.com/101x18" alt="Логотип Cat Energy" aria-hidden="true">
+        <img class="image-logo" src="https://via.placeholder.com/34x37" alt="Логотип Cat Energy">
+        <img class="text-logo" src="https://via.placeholder.com/101x18" alt="Логотип Cat Energy" aria-hidden="true">
 
         <!-- При открытом состоянии навигации: main-header__menu-toggle--cross -->
         <button class="main-header__menu-toggle" type="button">
@@ -39,7 +40,7 @@
     <main>
       <h1 class="visually-hidden">Главная страница Cat Energy</h1>
 
-      <section class="preview">
+      <section class="preview container">
         <h2 class="visually-hidden">Вступление</h2>
         <p class="preview__title title">Функциональное питание для котов</p>
         <p class="preview__text">Занялся собой? Займись котом!</p>
@@ -47,23 +48,23 @@
         <button class="preview__button button" type="button">Подобрать программу</button>
       </section>
 
-      <section class="programms">
+      <section class="programms container">
         <h2 class="visually-hidden">Наши программы</h2>
         <ul class="programms__list">
-          <li class="programms__item programm programm--reduce">
-            <h3 class="programm__title">Похудение</h3>
+          <li class="programms__item programm">
+            <h3 class="programm__title programm__title--slim">Похудение</h3>
             <p class="programm__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <button class="programm__button" type="button">Каталог Slim</button>
+            <a class="programm__link arrow-link" href="catalog.html">Каталог Slim</a>
           </li>
-          <li class="programms__item programm programm--increase">
-            <h3 class="programm__title">Набор массы</h3>
+          <li class="programms__item programm">
+            <h3 class="programm__title programm__title--pro">Набор массы</h3>
             <p class="programm__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <button class="programm__button" type="button">Каталог Pro</button>
+            <a class="programm__link arrow-link" href="catalog.html">Каталог Pro</a>
           </li>
         </ul>
       </section>
 
-      <section class="explanation">
+      <section class="explanation container">
         <h2 class="explanation__title title">Как это работает</h2>
         <ul class="explanation__list">
           <li class="explanation__item explanation__item--leaf">
