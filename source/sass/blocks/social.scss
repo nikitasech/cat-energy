@@ -1,0 +1,34 @@
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.social__link {
+  display: block;
+  width: 23px;
+  height: 23px;
+
+  background-color: #666666; // Для наглядности
+  background-clip: content-box; // Для наглядности
+
+  &:hover {
+    background-color: #68b738; // Для наглядности
+
+    fill: #68b738;
+  }
+
+  &:active {
+    background-color: rgba(#68b738, 0.3); // Для наглядности
+
+    fill-opacity: 0.3;
+  }
+}

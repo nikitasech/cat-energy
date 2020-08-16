@@ -3,20 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Кэт энерджи - Подбор программы</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header container">
-      <div class="main-header__inner">
-        <img class="logo logo--image" src="https://via.placeholder.com/34x37" alt="Логотип Cat Energy">
-        <img class="logo logo--text" src="https://via.placeholder.com/101x18" alt="Логотип Cat Energy" aria-hidden="true">
+    <header class="main-header">
+      <div class="main-header__inner container">
+        <img class="image-logo" src="https://via.placeholder.com/34x37" alt="Логотип Cat Energy" width="34" height="37">
+        <img class="text-logo" src="https://via.placeholder.com/101x18" alt="Логотип Cat Energy" width="101" height="18" aria-hidden="true">
 
         <!-- При открытом состоянии навигации: main-header__menu-toggle--cross -->
-        <button class="main-header__menu-toggle">
-          Открыть меню
-          <svg>
-            <!-- При открытом состоянии навигации: xlink:href="#icon-cross" -->
-            <use xlink:href="#icon-gamburger"></use>
-          </svg>
+        <button class="main-header__menu-toggle main-header__menu-toggle--cross" type="button">
+          <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
 
@@ -41,13 +38,15 @@
 
     <footer class="main-footer container">
       <!-- Карта -->
-      <img class="logo logo--text" src="https://via.placeholder.com/101x18" alt="Логотип Cat Energy">
+      <div class="main-footer__logo-container">
+        <img class="main-footer__logo text-logo" src="https://via.placeholder.com/128x24" alt="Логотип Cat Energy" width="128" height="24">
+      </div>
 
-      <ul class="social">
+      <ul class="main-footer__social social">
         <li class="social__item">
           <a class="social__link" href="https://vk.com">
             <p class="visually-hidden">Вконтакте</p>
-            <svg class="social__icon">
+            <svg class="social__icon" width="23" height="23">
               <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
@@ -56,7 +55,7 @@
         <li class="social__item">
           <a class="social__link" href="https://www.fb.com">
             <p class="visually-hidden">Instagram</p>
-            <svg class="social__icon">
+            <svg class="social__icon" width="23" height="23">
               <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
@@ -65,16 +64,18 @@
         <li class="social__item">
           <a class="social__link" href="https://www.instagram.com">
             <p class="visually-hidden">Facebook</p>
-            <svg class="social__icon">
+            <svg class="social__icon" width="23" height="23">
               <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
       </ul>
 
-      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="copyright__text">HTML Academy</p>
-        <img class="copyright__image" src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy">
+        <svg class="copyright__icon" width="27" height="34">
+          <use xlik:href="#icon-htmlacademy"></use>
+        </svg>
       </a>
     </footer>
   </body>

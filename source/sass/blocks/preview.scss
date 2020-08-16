@@ -1,0 +1,38 @@
+.preview {
+  margin-bottom: 25px;
+  padding-top: 25px;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: center;
+  color: $white;
+
+  background-image: url("../img/index-background-mobile@1x.jpg"),
+  linear-gradient($dark-green 0 55%, $white 55%);
+  // FIXME: Background image and color not synced
+  // =======================================
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.preview__title {
+  margin-right: auto;
+  margin-bottom: 25px;
+  margin-left: auto;
+
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.preview__text {
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.preview__image {
+  margin-bottom: 5px;
+}

@@ -3,20 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Кэт энерджи - Каталог</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header container">
-      <div class="main-header__inner">
-        <img class="logo logo--image" src="https://via.placeholder.com/34x37" alt="Логотип Cat Energy">
-        <img class="logo logo--text" src="https://via.placeholder.com/101x18" alt="Логотип Cat Energy" aria-hidden="true">
+    <header class="main-header">
+      <div class="main-header__inner container">
+        <img class="image-logo" src="https://via.placeholder.com/34x37" alt="Логотип Cat Energy" width="34" height="37">
+        <img class="text-logo" src="https://via.placeholder.com/101x18" alt="Логотип Cat Energy" width="101" height="18" aria-hidden="true">
 
         <!-- При открытом состоянии навигации: main-header__menu-toggle--cross -->
-        <button class="main-header__menu-toggle">
-          Открыть меню
-          <svg>
-            <!-- При открытом состоянии навигации: xlink:href="#icon-cross" -->
-            <use xlink:href="#icon-gamburger"></use>
-          </svg>
+        <button class="main-header__menu-toggle main-header__menu-toggle--cross" type="button">
+          <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
 
@@ -30,157 +27,191 @@
             <a class="nav__link nav__link--selected" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--selected">Подбор программы</a>
+            <a class="nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h1 class="title">Каталог продукции</h1>
+      <h1 class="title container">Каталог продукции</h1>
 
       <section class="basic-goods">
         <h2 class="visually-hidden">Основные товары</h2>
 
         <ul class="basic-goods__list">
           <li class="basic-goods__item basic-good">
-            <img class="basic-good__image" src="https://via.placeholder.com/84x100" alt="">
-            <h3 class="basic-good__title">Cat Energy PRO 500 г</h3>
-            <table class="basic-good__table">
-              <tr class="basic-good__table-row">
-                <th class="basic-good__table-header">Масса</th>
-                <td class="basic-good__table-cell">500 г</td>
-              </tr>
-              <tr class="basic-good__table-row">
-                <th class="basic-good__table-header">Вкус</th>
-                <td class="basic-good__table-cell">Курица</td>
-              </tr>
-              <tr class="basic-good__table-row">
-                <th class="basic-good__table-header">Цена</th>
-                <td class="basic-good__table-cell">700 Р.</td>
-              </tr>
-            </table>
-            <button class="basic-good__button"></button>
-          </li>
-          <li class="basic-goods__item basic-good">
-            <img class="basic-good__image" src="https://via.placeholder.com/84x100" alt="">
-            <h3 class="basic-good__title">Cat Energy PRO 1000 г</h3>
-            <table class="basic-good__table">
-              <tr class="basic-good__table-row">
-                <th class="basic-good__table-header">Масса</th>
-                <td class="basic-good__table-cell">1000 г</td>
-              </tr>
-              <tr class="basic-good__table-row">
-                <th class="basic-good__table-header">Вкус</th>
-                <td class="basic-good__table-cell">Курица</td>
-              </tr>
-              <tr class="basic-good__table-row">
-                <th class="basic-good__table-header">Цена</th>
-                <td class="basic-good__table-cell">1000 Р.</td>
-              </tr>
-            </table>
+            <div class="basic__good__image">
+              <img src="https://via.placeholder.com/140x144" alt="" width="140" height="144">
+            </div>
+            <div class="basic-good__info">
+              <h3 class="basic-good__title">Cat Energy PRO 500 г</h3>
+              <table class="basic-good__table">
+                <tr class="basic-good__table-row">
+                  <th class="basic-good__table-header">Масса</th>
+                  <td class="basic-good__table-cell">500 г</td>
+                </tr>
+                <tr class="basic-good__table-row">
+                  <th class="basic-good__table-header">Вкус</th>
+                  <td class="basic-good__table-cell">Курица</td>
+                </tr>
+                <tr class="basic-good__table-row">
+                  <th class="basic-good__table-header">Цена</th>
+                  <td class="basic-good__table-cell">700 Р.</td>
+                </tr>
+              </table>
+            </div>
             <a class="basic-good__button button" href="">Заказать</a>
           </li>
+
           <li class="basic-goods__item basic-good">
-            <img class="basic-good__image" src="https://via.placeholder.com/84x100" alt="">
-            <h3 class="basic-good__title">Cat Energy PRO 500 г</h3>
-            <table class="basic-good__table">
-              <tr class="basic-good__table-row">
-                <th class="basic-good__table-header">Масса</th>
-                <td class="basic-good__table-cell">500 г</td>
-              </tr>
-              <tr class="basic-good__table-row">
-                <th class="basic-good__table-header">Вкус</th>
-                <td class="basic-good__table-cell">Рыба</td>
-              </tr>
-              <tr class="basic-good__table-row">
-                <th class="basic-good__table-header">Цена</th>
-                <td class="basic-good__table-cell">700 Р.</td>
-              </tr>
-            </table>
+            <div class="basic__good__image">
+              <img src="https://via.placeholder.com/140x144" alt="" width="140" height="144">
+            </div>
+            <div class="basic-good__info">
+              <h3 class="basic-good__title">Cat Energy PRO 1000 г</h3>
+              <table class="basic-good__table">
+                <tr class="basic-good__table-row">
+                  <th class="basic-good__table-header">Масса</th>
+                  <td class="basic-good__table-cell">1000 г</td>
+                </tr>
+                <tr class="basic-good__table-row">
+                  <th class="basic-good__table-header">Вкус</th>
+                  <td class="basic-good__table-cell">Курица</td>
+                </tr>
+                <tr class="basic-good__table-row">
+                  <th class="basic-good__table-header">Цена</th>
+                  <td class="basic-good__table-cell">1000 Р.</td>
+                </tr>
+              </table>
+            </div>
             <a class="basic-good__button button" href="">Заказать</a>
           </li>
+
           <li class="basic-goods__item basic-good">
-            <img class="basic-good__image" src="https://via.placeholder.com/84x100" alt="">
-            <h3 class="basic-good__title">Cat Energy PRO 1000 г</h3>
-            <table class="basic-good__table">
-              <tr class="basic-good__table-row">
-                <th class="basic-good__table-header">Масса</th>
-                <td class="basic-good__table-cell">1000 г</td>
-              </tr>
-              <tr class="basic-good__table-row">
-                <th class="basic-good__table-header">Вкус</th>
-                <td class="basic-good__table-cell">Рыба</td>
-              </tr>
-              <tr class="basic-good__table-row">
-                <th class="basic-good__table-header">Цена</th>
-                <td class="basic-good__table-cell">1000 Р.</td>
-              </tr>
-            </table>
+            <div class="basic__good__image">
+              <img src="https://via.placeholder.com/140x144" alt="" width="140" height="144">
+            </div>
+            <div class="basic-good__info">
+              <h3 class="basic-good__title">Cat Energy PRO 500 г</h3>
+              <table class="basic-good__table">
+                <tr class="basic-good__table-row">
+                  <th class="basic-good__table-header">Масса</th>
+                  <td class="basic-good__table-cell">500 г</td>
+                </tr>
+                <tr class="basic-good__table-row">
+                  <th class="basic-good__table-header">Вкус</th>
+                  <td class="basic-good__table-cell">Рыба</td>
+                </tr>
+                <tr class="basic-good__table-row">
+                  <th class="basic-good__table-header">Цена</th>
+                  <td class="basic-good__table-cell">700 Р.</td>
+                </tr>
+              </table>
+            </div>
             <a class="basic-good__button button" href="">Заказать</a>
           </li>
+
           <li class="basic-goods__item basic-good">
-            <img class="basic-good__image" src="https://via.placeholder.com/84x100" alt="">
-            <h3 class="basic-good__title">Cat Energy slim 500 г</h3>
-            <table class="basic-good__table">
-              <tr class="basic-good__table-row">
-                <th class="basic-good__table-header">Масса</th>
-                <td class="basic-good__table-cell">500 г</td>
-              </tr>
-              <tr class="basic-good__table-row">
-                <th class="basic-good__table-header">Вкус</th>
-                <td class="basic-good__table-cell">Гречка</td>
-              </tr>
-              <tr class="basic-good__table-row">
-                <th class="basic-good__table-header">Цена</th>
-                <td class="basic-good__table-cell">400 Р.</td>
-              </tr>
-            </table>
+            <div class="basic__good__image">
+              <img src="https://via.placeholder.com/140x144" alt="" width="140" height="144">
+            </div>
+            <div class="basic-good__info">
+              <h3 class="basic-good__title">Cat Energy PRO 1000 г</h3>
+              <table class="basic-good__table">
+                <tr class="basic-good__table-row">
+                  <th class="basic-good__table-header">Масса</th>
+                  <td class="basic-good__table-cell">1000 г</td>
+                </tr>
+                <tr class="basic-good__table-row">
+                  <th class="basic-good__table-header">Вкус</th>
+                  <td class="basic-good__table-cell">Рыба</td>
+                </tr>
+                <tr class="basic-good__table-row">
+                  <th class="basic-good__table-header">Цена</th>
+                  <td class="basic-good__table-cell">1000 Р.</td>
+                </tr>
+              </table>
+            </div>
             <a class="basic-good__button button" href="">Заказать</a>
           </li>
+
           <li class="basic-goods__item basic-good">
-            <img class="basic-good__image" src="https://via.placeholder.com/84x100" alt="">
-            <h3 class="basic-good__title">Cat Energy slim 1000 г</h3>
-            <table class="basic-good__table">
-              <tr class="basic-good__table-row">
-                <th class="basic-good__table-header">Масса</th>
-                <td class="basic-good__table-cell">1000 г</td>
-              </tr>
-              <tr class="basic-good__table-row">
-                <th class="basic-good__table-header">Вкус</th>
-                <td class="basic-good__table-cell">Гречка</td>
-              </tr>
-              <tr class="basic-good__table-row">
-                <th class="basic-good__table-header">Цена</th>
-                <td class="basic-good__table-cell">700 Р.</td>
-              </tr>
-            </table>
+            <div class="basic__good__image">
+              <img src="https://via.placeholder.com/140x144" alt="" width="140" height="144">
+            </div>
+            <div class="basic-good__info">
+              <h3 class="basic-good__title">Cat Energy slim 500 г</h3>
+              <table class="basic-good__table">
+                <tr class="basic-good__table-row">
+                  <th class="basic-good__table-header">Масса</th>
+                  <td class="basic-good__table-cell">500 г</td>
+                </tr>
+                <tr class="basic-good__table-row">
+                  <th class="basic-good__table-header">Вкус</th>
+                  <td class="basic-good__table-cell">Гречка</td>
+                </tr>
+                <tr class="basic-good__table-row">
+                  <th class="basic-good__table-header">Цена</th>
+                  <td class="basic-good__table-cell">400 Р.</td>
+                </tr>
+              </table>
+            </div>
             <a class="basic-good__button button" href="">Заказать</a>
           </li>
+
           <li class="basic-goods__item basic-good">
-            <img class="basic-good__image" src="https://via.placeholder.com/84x100" alt="">
-            <h3 class="basic-good__title">Cat Energy slim 500 г</h3>
-            <table class="basic-good__table">
-              <tr class="basic-good__table-row">
-                <th class="basic-good__table-header">Масса</th>
-                <td class="basic-good__table-cell">500 г</td>
-              </tr>
-              <tr class="basic-good__table-row">
-                <th class="basic-good__table-header">Вкус</th>
-                <td class="basic-good__table-cell">Рис</td>
-              </tr>
-              <tr class="basic-good__table-row">
-                <th class="basic-good__table-header">Цена</th>
-                <td class="basic-good__table-cell">500 Р.</td>
-              </tr>
-            </table>
+            <div class="basic__good__image">
+              <img src="https://via.placeholder.com/140x144" alt="" width="140" height="144">
+            </div>
+            <div class="basic-good__info">
+              <h3 class="basic-good__title">Cat Energy slim 1000 г</h3>
+              <table class="basic-good__table">
+                <tr class="basic-good__table-row">
+                  <th class="basic-good__table-header">Масса</th>
+                  <td class="basic-good__table-cell">1000 г</td>
+                </tr>
+                <tr class="basic-good__table-row">
+                  <th class="basic-good__table-header">Вкус</th>
+                  <td class="basic-good__table-cell">Гречка</td>
+                </tr>
+                <tr class="basic-good__table-row">
+                  <th class="basic-good__table-header">Цена</th>
+                  <td class="basic-good__table-cell">700 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="basic-good__button button" href="">Заказать</a>
+          </li>
+
+          <li class="basic-goods__item basic-good">
+            <div class="basic__good__image">
+              <img src="https://via.placeholder.com/140x144" alt="" width="140" height="144">
+            </div>
+            <div class="basic-good__info">
+              <h3 class="basic-good__title">Cat Energy slim 500 г</h3>
+              <table class="basic-good__table">
+                <tr class="basic-good__table-row">
+                  <th class="basic-good__table-header">Масса</th>
+                  <td class="basic-good__table-cell">500 г</td>
+                </tr>
+                <tr class="basic-good__table-row">
+                  <th class="basic-good__table-header">Вкус</th>
+                  <td class="basic-good__table-cell">Рис</td>
+                </tr>
+                <tr class="basic-good__table-row">
+                  <th class="basic-good__table-header">Цена</th>
+                  <td class="basic-good__table-cell">500 Р.</td>
+                </tr>
+              </table>
+            </div>
             <a class="basic-good__button button" href="">Заказать</a>
           </li>
         </ul>
       </section>
 
-      <div class="pagination">
-        <button class="pagination__still-button" type="button">Показать ещё 100500 товаров</button>
+      <div class="pagination container">
+        <button class="pagination__still-button" type="button">Показать еще 100500 товаров</button>
         <p class="pagitation__text">На самом деле вкусов гораздо больше!</p>
         <a class="pagination__all-button button button--grey" href="">Показать все</a>
       </div>
@@ -191,13 +222,15 @@
 
     <footer class="main-footer container">
       <!-- Карта -->
-      <img class="logo logo--text" src="https://via.placeholder.com/101x18" alt="Логотип Cat Energy">
+      <div class="main-footer__logo-container">
+        <img class="main-footer__logo text-logo" src="https://via.placeholder.com/128x24" alt="Логотип Cat Energy" width="128" height="24">
+      </div>
 
-      <ul class="social">
+      <ul class="main-footer__social social">
         <li class="social__item">
           <a class="social__link" href="https://vk.com">
             <p class="visually-hidden">Вконтакте</p>
-            <svg class="social__icon">
+            <svg class="social__icon" width="23" height="23">
               <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
@@ -206,7 +239,7 @@
         <li class="social__item">
           <a class="social__link" href="https://www.fb.com">
             <p class="visually-hidden">Instagram</p>
-            <svg class="social__icon">
+            <svg class="social__icon" width="23" height="23">
               <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
@@ -215,16 +248,18 @@
         <li class="social__item">
           <a class="social__link" href="https://www.instagram.com">
             <p class="visually-hidden">Facebook</p>
-            <svg class="social__icon">
+            <svg class="social__icon" width="23" height="23">
               <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
       </ul>
 
-      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="copyright__text">HTML Academy</p>
-        <img class="copyright__image" src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy">
+        <svg class="copyright__icon" width="27" height="34">
+          <use xlik:href="#icon-htmlacademy"></use>
+        </svg>
       </a>
     </footer>
   </body>

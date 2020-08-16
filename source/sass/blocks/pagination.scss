@@ -1,0 +1,30 @@
+.pagination__still-button {
+  display: block;
+  width: 100%;
+  padding-top: 80px;
+  padding-right: 0;
+  padding-left: 0;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #111111;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  background-image: url("../img/icon-plus-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center top 25px;
+  background-size: 30px 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.pagitation__text {
+  margin-bottom: 20px;
+
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $light-black;
+}
