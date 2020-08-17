@@ -12,6 +12,16 @@
   // =======================================
   background-repeat: no-repeat;
   background-position: center top;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    padding-top: 50px;
+
+    text-align: left;
+
+    background-image: none;
+  }
 }
 
 .preview__title {
@@ -21,9 +31,23 @@
 
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    width: 415px;
+    margin-right: 0;
+    margin-bottom: 40px;
+    margin-left: 0;
+    padding-left: 90px;
+
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+  }
 }
 
 .preview__text {
+  margin-top: 0;
   margin-right: auto;
   margin-bottom: 30px;
   margin-left: auto;
@@ -31,8 +55,39 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 90px;
+
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+  }
 }
 
 .preview__image {
   margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+  }
+}
+
+.preview__button {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 545px;
+    left: 120px;
+
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
 }

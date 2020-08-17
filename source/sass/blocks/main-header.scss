@@ -1,5 +1,19 @@
 .main-header {
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.main-header__text-logo {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-header__inner {
@@ -7,6 +21,13 @@
   justify-content: space-between;
   align-items: center;
   min-height: 66px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .main-header__menu-toggle {
@@ -22,5 +43,9 @@
 
   &--cross {
     background-image: url("../img/icon-close.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
