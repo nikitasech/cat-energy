@@ -14,3 +14,8 @@
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
 }
+
+@mixin desktop-container {
+  padding-right: calc((100% - 1220px) / 2);
+  padding-left: calc((100% - 1220px) / 2);
+}
