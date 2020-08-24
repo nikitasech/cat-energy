@@ -4,6 +4,29 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Pixel Glass -->
+    <style>
+      html {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        background-image: url(".pixel-glass/index-mobile.png");
+      }
+      @media (min-width: 768px) {
+        html {
+          background-image: url(".pixel-glass/index-tablet.png");
+        }
+      }
+      @media (min-width: 1440px) {
+        html {
+          background-image: url(".pixel-glass/index-desktop.png");
+        }
+      }
+    </style>
+    <link href=".pixel-glass/styles.css" rel="stylesheet">
+    <script src=".pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
+
   </head>
   <body>
     <header class="main-header">
@@ -46,7 +69,7 @@
         <p class="preview__title title">Функциональное питание для котов</p>
         <p class="preview__text">Занялся собой? Займись котом!</p>
 
-        <picture>
+        <picture class="preview__picture">
           <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png">
           <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
           <img class="preview__image" src="img/index-can-mobile@1x.png" alt="Куриный доширак для кота" width="280" height="270">
@@ -65,7 +88,7 @@
           </li>
           <li class="programms__item programm">
             <h3 class="programm__title programm__title--pro">Набор массы</h3>
-            <p class="programm__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <p class="programm__text">Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые <br class="br br--tablet">мышцы!</p>
             <a class="programm__link arrow-link" href="catalog.html">Каталог Pro</a>
           </li>
         </ul>
@@ -101,7 +124,7 @@
     <footer class="main-footer container">
       <!-- Карта -->
       <a class="main-footer__logo-link">
-        <img class="main-footer__logo text-logo" src="img/logo-footer.svg"" alt="Логотип Cat Energy" width="128" height="24">
+        <img class="main-footer__logo text-logo" src="img/logo-footer.svg" alt="Логотип Cat Energy" width="128" height="24">
       </a>
 
       <ul class="main-footer__social social">
