@@ -1,5 +1,7 @@
 .preview {
-  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
   padding-top: 25px;
 
   font-family: "Oswald", "Arial", sans-serif;
@@ -14,13 +16,30 @@
   background-position: center top;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-
-    padding-top: 50px;
+    align-items: start;
+    margin-bottom: 0;
+    padding-top: 28px;
 
     text-align: left;
 
     background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 696px;
+    margin-top: -172px;
+    margin-bottom: 80px;
+    padding-top: 172px;
+
+    background-image: url("../img/index-background-desktop@1x.jpg"),
+    linear-gradient(to right, transparent 0 50%, $dark-green 50%);
+    // (Ширина экрана - ширина контентной области) / 2
+    // Таким образом получаем независимый
+    // от размера экрана отступ
+    background-position: right calc((100vw - 1440px) / 2) top 0, right top;
   }
 }
 
@@ -29,20 +48,25 @@
   margin-bottom: 25px;
   margin-left: auto;
 
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
 
   @media (min-width: $tablet-width) {
     width: 415px;
     margin-right: 0;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
     margin-left: 0;
-    padding-left: 90px;
+    padding-left: 88px;
 
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
     color: #000000;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
   }
 }
 
@@ -52,42 +76,60 @@
   margin-bottom: 30px;
   margin-left: auto;
 
-  font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     margin-right: 0;
+    margin-bottom: 50px;
     margin-left: 0;
-    padding-left: 90px;
+    padding-left: 88px;
 
     font-size: 20px;
     line-height: 20px;
     color: #000000;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
+}
+
+.preview__picture {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }
 
 .preview__image {
-  margin-bottom: 5px;
-
   @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: -1;
+
     width: 709px;
     height: 609px;
+    margin-top: -85px;
   }
 
   @media (min-width: $desktop-width) {
+    z-index: 1;
+
+    display: block;
     width: 552px;
     height: 499px;
+    margin-top: -365px;
+    margin-left: 448px;
   }
 }
 
 .preview__button {
   @media (min-width: $tablet-width) {
-    position: absolute;
-    bottom: 545px;
-    left: 120px;
+    margin-left: 83px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 
-    padding-top: 18px;
-    padding-bottom: 18px;
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
   }
 }
