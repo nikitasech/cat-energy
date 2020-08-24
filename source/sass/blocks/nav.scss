@@ -24,8 +24,8 @@
 
 .nav__link {
   display: block;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 23px;
+  padding-bottom: 23px;
 
   font-weight: 500;
   font-size: 20px;
@@ -43,14 +43,29 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
 
     font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
 
     border-top: none;
 
     &--selected {
       border-bottom: 2px solid $light-green;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &--index {
+      color: $white;
+    }
+
+    &--selected {
+      border-bottom: 2px solid $white;
     }
   }
 }

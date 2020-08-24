@@ -5,8 +5,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 22px;
     padding-right: 30px;
+    padding-bottom: 22px;
     padding-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-container;
+
+    padding-top: 53px;
+    padding-bottom: 53px;
   }
 }
 
@@ -20,7 +29,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 66px;
+  min-height: 65px;
   padding-right: 20px;
   padding-left: 20px;
 
@@ -47,5 +56,15 @@
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.main-header__nav {
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 7px;
   }
 }
