@@ -1,5 +1,9 @@
 .basic-goods {
   padding-top: 40px;
+
+  @media (min-width: $desktop-width) {
+    @include desktop-container;
+  }
 }
 
 .basic-goods__list {
