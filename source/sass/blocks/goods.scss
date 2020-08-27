@@ -1,12 +1,10 @@
-.basic-goods {
-  padding-top: 40px;
-
+.goods {
   @media (min-width: $desktop-width) {
     @include desktop-container;
   }
 }
 
-.basic-goods__list {
+.goods__list {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -14,7 +12,7 @@
   list-style: none;
 }
 
-.basic-goods__item {
+.goods__item {
   border-top: 1px solid #ebebeb;
 
   &:last-child {

@@ -1,4 +1,4 @@
-.basic-good {
+.good {
   display: grid;
   padding-right: 20px;
   padding-left: 20px;
@@ -6,17 +6,17 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.basic__good__image {
+.good__image {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.basic-good__info {
+.good__info {
   padding-top: 15px;
 }
 
-.basic-good__title {
+.good__title {
   margin-top: 0;
   margin-bottom: 0;
   margin-bottom: 15px;
@@ -29,22 +29,22 @@
   text-transform: uppercase;
 }
 
-.basic-good__table {
+.good__table {
   width: 100%;
 
   font-size: 12px;
   line-height: 16px;
 }
 
-.basic-good__table-header {
+.good__table-header {
   font-weight: 500;
 }
 
-.basic-good__table-cell {
+.good__table-cell {
   text-align: right;
 }
 
-.basic-good__button {
+.good__button {
   margin-bottom: 25px;
 
   grid-column: 1 / 3;
