@@ -15,6 +15,12 @@
 }
 
 .nav__item {
+  border-top: 1px solid #e6e6e6;
+
+  &:last-child {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
   &:not(:last-child) {
     @media (min-width: $tablet-width) {
       margin-right: 35px;
@@ -34,8 +40,6 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-
-  border-top: 1px solid #e6e6e6;
 
   &--selected {
     cursor: default;
