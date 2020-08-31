@@ -21,10 +21,18 @@
     border-bottom: 1px solid #e6e6e6;
   }
 
-  &:not(:last-child) {
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
       margin-right: 35px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+
+  &:last-child {
+    border-bottom: none;
+  }
   }
 }
 
@@ -64,11 +72,11 @@
     font-size: 20px;
     line-height: 30px;
 
-    &--index {
+    &--white {
       color: $white;
     }
 
-    &--selected {
+    &--white.nav__link--selected {
       border-bottom: 2px solid $white;
     }
   }
