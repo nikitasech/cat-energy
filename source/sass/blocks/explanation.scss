@@ -4,10 +4,33 @@
   padding-left: 0;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    counter-reset: explanation;
+
+    grid-column-gap: 55px;
+    grid-row-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 80px;
+  }
 }
 
 .explanation__title {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .explanation__item {
@@ -15,8 +38,6 @@
   align-items: center;
   margin-bottom: 20px;
 
-  font-size: 14px;
-  line-height: 18px;
   color: $light-black;
 
   &::before {
@@ -29,22 +50,68 @@
     margin-right: 20px;
 
     background-color: $light-green;
+    background-repeat: no-repeat;
     background-position: center;
   }
 
   &--leaf::before {
-    background-image: url('../img/advantage-leaf@1x.png');
+    background-image: url("../img/advantage-leaf@1x.png");
   }
 
   &--powder::before {
-    background-image: url('../img/advantage-powder@1x.png');
+    background-image: url("../img/advantage-powder@1x.png");
   }
 
   &--dining::before {
-    background-image: url('../img/advantage-dining@1x.png');
+    background-image: url("../img/advantage-dining@1x.png");
   }
 
   &--clock::before {
-    background-image: url('../img/advantage-clock@1x.png');
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 280px;
+    margin-bottom: 0;
+    padding-right: 80px;
+
+    counter-increment: explanation;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
+    &::after {
+      content: counter(explanation);
+      position: absolute;
+      top: 10px;
+      right: 80px;
+      z-index: -1;
+
+      width: 135px;
+
+      font-size: 280px;
+      line-height: 280px;
+      font-family: "Oswald", "Arial", sans-serif;
+      text-align: center;
+      color: $smoky-white;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+
+    &::after {
+      right: 0;
+    }
   }
 }

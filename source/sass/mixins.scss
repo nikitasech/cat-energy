@@ -14,3 +14,13 @@
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
 }
+
+@mixin tablet-container {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+@mixin desktop-container {
+  padding-right: calc((100% - 1220px) / 2);
+  padding-left: calc((100% - 1220px) / 2);
+}

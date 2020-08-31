@@ -1,6 +1,17 @@
+.pagination {
+  @media (min-width: $tablet-width) {
+    margin-top: 90px;
+    padding-right: 38px;
+    padding-left: 38px;
+
+    box-shadow: inset 0 0 0 2px $smoky-white;
+  }
+}
+
 .pagination__still-button {
   display: block;
   width: 100%;
+  margin-bottom: 7px;
   padding-top: 80px;
   padding-right: 0;
   padding-left: 0;
@@ -18,13 +29,58 @@
   background-size: 30px 30px;
   border: none;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+    padding-top: 165px;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    font-size: 20px;
+    line-height: 22px;
+
+    background-image: url("../img/icon-plus.svg");
+    background-position: center top 55px;
+    background-size: 60px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 160px;
+    padding-right: 0;
+    padding-left: 0;
+
+    background-position: center top 50px;
+  }
 }
 
-.pagitation__text {
+.pagination__text {
+  margin-top: 0;
   margin-bottom: 20px;
 
   font-size: 12px;
   line-height: 16px;
   text-align: center;
   color: $light-black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 85px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.pagination__all-button {
+  margin-bottom: 25px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  font-size: 16px;
 }
