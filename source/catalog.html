@@ -9,9 +9,9 @@
     <!-- Pixel Glass -->
     <style>
       html {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
         background-image: url(".pixel-glass/catalog-mobile.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
       }
       @media (min-width: 768px) {
         html {
@@ -23,6 +23,7 @@
           background-image: url(".pixel-glass/catalog-desktop.jpg");
         }
       }
+
     </style>
     <link href=".pixel-glass/styles.css" rel="stylesheet">
     <script src=".pixel-glass/script.js"></script>
@@ -52,7 +53,7 @@
             <a class="nav__link" href="index.html">Главная</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--selected" href="catalog.html">Каталог продукции</a>
+            <a class="nav__link nav__link--selected nav__link--white-selected">Каталог продукции</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="form.html">Подбор программы</a>
@@ -72,9 +73,8 @@
             <li class="goods__item good">
               <div class="good__image">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/chicken-small-desktop@1x.png">
-                  <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.jpg">
-                  <img src="img/chicken-small-mobile@1x.jpg" alt="" width="140" height="144">
+                  <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png">
+                  <img src="img/chicken-small-mobile@1x.jpg" alt="" width="140" height="112">
                 </picture>
               </div>
               <div class="good__info">
@@ -100,9 +100,8 @@
             <li class="goods__item good">
               <div class="good__image">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/chicken-big-desktop@1x.png">
-                  <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.jpg">
-                  <img src="img/chicken-big-mobile@1x.jpg" alt="" width="140" height="144">
+                  <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png">
+                  <img src="img/chicken-big-mobile@1x.jpg" alt="" width="140" height="112">
                 </picture>
               </div>
               <div class="good__info">
@@ -128,9 +127,8 @@
             <li class="goods__item good">
               <div class="good__image">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/fish-small-desktop@1x.png">
-                  <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.jpg">
-                  <img src="img/fish-small-mobile@1x.jpg" alt="" width="140" height="144">
+                  <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png">
+                  <img src="img/fish-small-mobile@1x.jpg" alt="" width="140" height="112">
                 </picture>
               </div>
               <div class="good__info">
@@ -156,9 +154,8 @@
             <li class="goods__item good">
               <div class="good__image">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/buckwheat-small-desktop@1x.png">
-                  <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.jpg">
-                  <img src="img/buckwheat-small-mobile@1x.jpg" alt="" width="140" height="144">
+                  <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png">
+                  <img src="img/fish-big-mobile@1x.jpg" alt="" width="140" height="112">
                 </picture>
               </div>
               <div class="good__info">
@@ -184,9 +181,8 @@
             <li class="goods__item good">
               <div class="good__image">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/buckwheat-big-desktop@1x.png">
-                  <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.jpg">
-                  <img src="img/buckwheat-big-mobile@1x.jpg" alt="" width="140" height="144">
+                  <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png">
+                  <img src="img/buckwheat-small-mobile@1x.jpg" alt="" width="140" height="112">
                 </picture>
               </div>
               <div class="good__info">
@@ -212,9 +208,8 @@
             <li class="goods__item good">
               <div class="good__image">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/rice-small-desktop@1x.png">
-                  <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.jpg">
-                  <img src="img/rice-small-mobile@1x.jpg" alt="" width="140" height="144">
+                  <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png">
+                  <img src="img/buckwheat-big-mobile@1x.jpg" alt="" width="140" height="112">
                 </picture>
               </div>
               <div class="good__info">
@@ -236,13 +231,39 @@
               </div>
               <a class="good__button button" href="">Заказать</a>
             </li>
-          </ul>
 
-          <div class="pagination container">
-            <button class="pagination__still-button" type="button">Показать еще 100500 товаров</button>
-            <p class="pagination__text">На самом деле вкусов гораздо больше!</p>
-            <a class="pagination__all-button button button--grey" href="">Показать все</a>
-          </div>
+            <li class="goods__item good">
+              <div class="good__image">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png">
+                  <img src="img/rice-small-mobile@1x.jpg" alt="" width="140" height="112">
+                </picture>
+              </div>
+              <div class="good__info">
+                <h3 class="good__title">Cat Energy slim 500 г</h3>
+                <table class="good__table">
+                  <tr class="good__table-row">
+                    <th class="good__table-header">Масса</th>
+                    <td class="good__table-cell">500 г</td>
+                  </tr>
+                  <tr class="good__table-row">
+                    <th class="good__table-header">Вкус</th>
+                    <td class="good__table-cell">Рис</td>
+                  </tr>
+                  <tr class="good__table-row">
+                    <th class="good__table-header">Цена</th>
+                    <td class="good__table-cell">500 Р.</td>
+                  </tr>
+                </table>
+              </div>
+              <a class="good__button button" href="">Заказать</a>
+            </li>
+            <li class="goods__item pagination container">
+              <button class="pagination__still-button" type="button">Показать еще 100500 товаров</button>
+              <p class="pagination__text">На самом деле вкусов гораздо больше!</p>
+              <a class="pagination__all-button button button--grey" href="">Показать все</a>
+            </li>
+          </ul>
         </section>
         <!-- Доп. товары -->
       </section>
@@ -252,7 +273,7 @@
     <footer class="main-footer container">
       <!-- Карта -->
       <a class="main-footer__logo-link">
-        <img class="main-footer__logo text-logo" src="img/logo-footer.svg" alt="Логотип Cat Energy" width="128" height="24">
+        <img class="main-footer__logo" src="img/logo-footer.svg" alt="Логотип Cat Energy" width="128" height="24">
       </a>
 
       <ul class="main-footer__social social">
