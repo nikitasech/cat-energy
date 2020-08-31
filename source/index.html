@@ -28,7 +28,7 @@
     <link href=".pixel-glass/styles.css" rel="stylesheet">
     <script src=".pixel-glass/script.js"></script>
     <!-- // Pixel Glass -->
-
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=fe3e40a5-100b-455b-a18f-3c5d4dd46059&lang=ru_RU" type="text/javascript"></script>
   </head>
   <body>
     <header class="main-header">
@@ -124,7 +124,7 @@
     </main>
 
     <footer class="main-footer container">
-      <!-- Карта -->
+      <div class="main-footer__map" id="map"></div>
       <a class="main-footer__logo-link">
         <img class="main-footer__logo text-logo" src="img/logo-footer.svg" alt="Логотип Cat Energy" width="128" height="24">
       </a>
@@ -165,5 +165,6 @@
         </svg>
       </a>
     </footer>
+    <script src="js/map.js"></script>
   </body>
 </html>

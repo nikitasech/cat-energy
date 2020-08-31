@@ -2,7 +2,6 @@
   padding-top: 39px;
   padding-bottom: 22px;
 
-
   background-color: $smoky-white;
 
   @media (min-width: $tablet-width) {
@@ -22,6 +21,18 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+  }
+}
+
+.main-footer__map {
+  height: 362px;
+
+  background-color: #000000;
+
+  grid-column: 1 / 4;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
   }
 }
 
