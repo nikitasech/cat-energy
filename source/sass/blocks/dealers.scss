@@ -1,11 +1,27 @@
 .dealers {
   display: grid;
-  margin-bottom: 22px;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 28px;
+  padding-bottom: 22px;
 
-  column-gap: 2px;
+  grid-template-columns: 140px 140px;
 
-  grid-template-columns: 1fr 1fr;
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+    padding-bottom: 62px;
+
+    background-color: $white;
+
+    grid-template-columns: 160px 160px;
+  }
+
+  @media(min-width: $desktop-width) {
+    box-sizing: border-box;
+    width: 570px;
+    padding-right: 75px;
+    padding-left: 75px;
+  }
 }
 
 .dealers__text {
@@ -16,6 +32,11 @@
   font-family: "Oswald", "Arial", sans-serif;
   color: #111111;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .dealers__address {
@@ -24,4 +45,20 @@
 
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.dealers__main-address {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-bottom: 20px;
+  }
 }

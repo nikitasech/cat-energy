@@ -4,14 +4,11 @@
   background-color: $smoky-white;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    align-items: center;
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding-bottom: 59px;
+  }
 
-    column-gap: 100px;
-
-    grid-template-columns: 128px 1fr 163px;
+  @media (min-width: $desktop-width) {
+    position: relative;
   }
 }
 
@@ -23,16 +20,35 @@
   }
 }
 
+.main-footer__dealers {
+  position: absolute;
+  top: 95px;
+  left: calc((100% - 1220px) / 2);
+  z-index: 1;
+}
+
 .main-footer__map {
   height: 362px;
-  margin-bottom: 39px;
+  margin-bottom: 40px;
 
   background-color: #000000;
 
   @media (min-width: $tablet-width) {
     height: 400px;
+    margin-bottom: 56px;
 
     grid-column: 1 / 4;
+  }
+}
+
+.main-footer__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    align-items: center;
+
+    column-gap: 100px;
+
+    grid-template-columns: 128px 1fr 163px;
   }
 }
 
