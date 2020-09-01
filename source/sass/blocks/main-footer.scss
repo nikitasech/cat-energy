@@ -1,5 +1,4 @@
 .main-footer {
-  padding-top: 39px;
   padding-bottom: 22px;
 
   background-color: $smoky-white;
@@ -16,7 +15,7 @@
   }
 }
 
-.main-footer > *:not(:first-child) {
+.main-footer__container > *:not(:first-child) {
   border-top: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
@@ -26,13 +25,14 @@
 
 .main-footer__map {
   height: 362px;
+  margin-bottom: 39px;
 
   background-color: #000000;
 
-  grid-column: 1 / 4;
-
   @media (min-width: $tablet-width) {
     height: 400px;
+
+    grid-column: 1 / 4;
   }
 }
 
