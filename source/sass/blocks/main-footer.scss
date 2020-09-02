@@ -21,10 +21,12 @@
 }
 
 .main-footer__dealers {
-  position: absolute;
-  top: 95px;
-  left: calc((100% - 1220px) / 2);
-  z-index: 1;
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: calc((100% - 1220px) / 2);
+    z-index: 1;
+  }
 }
 
 .main-footer__map {
