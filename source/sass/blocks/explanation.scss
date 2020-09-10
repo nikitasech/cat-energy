@@ -1,3 +1,15 @@
+.explanation {
+  margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+  }
+}
+
 .explanation__list {
   margin-top: 0;
   margin-bottom: 0;
@@ -16,8 +28,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 80px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -39,6 +51,10 @@
   margin-bottom: 20px;
 
   color: $light-black;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &::before {
     content: "";

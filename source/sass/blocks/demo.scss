@@ -1,0 +1,50 @@
+.demo {
+  position: relative;
+}
+
+.demo__pictures {
+  margin-bottom: 28px;
+
+  @media(min-width: $tablet-width) {
+    margin-bottom: 5px;
+  }
+
+  @media(min-width: $desktop-width) {
+    margin-bottom: 27px;
+  }
+}
+
+.demo__img {
+  @media(min-width: $tablet-width) {
+    width: 690px;
+    height: 517px;
+    padding-left: 15px;
+  }
+}
+
+.demo__img-container {
+  &--before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    overflow: hidden;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--before {
+      width: 50%;
+    }
+  }
+}
+
+.demo__slider {
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 575px;
+  }
+}

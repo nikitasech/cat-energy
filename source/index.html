@@ -121,6 +121,61 @@
           </li>
         </ul>
       </section>
+
+      <section class="example container">
+        <div class="example__info">
+          <h2 class="example__title title">Живой пример</h2>
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и<br class="br br--tablet"> по-прежнему спит по 16 часов в день.</p>
+
+          <div class="example__stats">
+            <ul class="example__modules">
+              <li class="example__modules-item module">
+                <p class="example__module-title module__title">снижение веса</p>
+                <p class="module__text">5 КГ</p>
+              </li>
+              <li class="example__modules-item module">
+                <p class="example__module-title module__title">затрачено времени</p>
+                <p class="module__text">60 ДНЕЙ</p>
+              </li>
+            </ul>
+
+            <p class="example__cost">
+              Затраты на питание:
+              <span class="example__cost-price">15 000 РУБ.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="example__demo demo">
+
+          <div class="demo__pictures">
+            <div class="example__before-img demo__img-container demo__img-container--before">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+                <img class="demo__img demo__img--before" src="img/before-mobile@1x.png" alt="Жирный кот до питания CatEnergy" width="320" height="240">
+              </picture>
+            </div>
+
+            <div class="example__after-img example__after-img demo__img-container demo__img-container--after">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+                <img class="demo__img demo__img--after" src="img/after-mobile@1x.png" alt="Обезжиренный кот после питания CatEnergy" width="320" height="240">
+              </picture>
+            </div>
+          </div>
+
+          <div class="example__demo-slider demo__slider slider">
+            <button class="slider__toggle slider__toggle--left" type="button">Было</button>
+            <div class="slider__bar">
+              <button class="slider__button" type="button">
+                <span class="visually-hidden">Ползунок</span>
+              </button>
+            </div>
+            <button class="slider__toggle slider__toggle--right" type="button">Стало</button>
+          </div>
+
+        </div>
+      </section>
     </main>
 
     <footer class="main-footer">
@@ -177,5 +232,7 @@
       </div>
     </footer>
     <script src="js/map.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/demo.js"></script>
   </body>
 </html>
