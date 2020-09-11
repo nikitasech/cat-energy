@@ -18,7 +18,8 @@
     display: block;
     flex-grow: 1;
     height: 2px;
-    margin-left: 25px;
+    margin-top: 7px;
+    margin-left: 22px;
 
     background-color: $light-green;
   }
@@ -30,6 +31,7 @@
     line-height: 36px;
 
     &::after {
+      margin-top: 11px;
       margin-left: 35px;
     }
 
@@ -37,9 +39,10 @@
       content: "";
 
       display: block;
-      width: 35px;
+      width: 30px;
       height: 2px;
-      margin-right: 35px;
+      margin-top: 11px;
+      margin-right: 38px;
 
       background-color: $light-green;
     }
