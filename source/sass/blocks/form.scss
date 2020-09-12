@@ -1,8 +1,15 @@
-.form__basic-info,
-.form__programm {
+.form__basic-list,
+.form__programm-list,
+.form__contacts-list,
+.form__additional-list {
+  @include mobile-container;
+
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 0;
 
   list-style: none;
+}
+
+.form__field-comment {
+  height: 150px;
 }

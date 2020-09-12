@@ -71,26 +71,27 @@
           программу питания для вашего кота
         </p>
 
-        <div class="form__info">
-          <ul class="form__basic-info">
+        <section class="form__info">
+          <h2 class="visually-hidden">Основная информация</h2>
+          <ul class="form__basic-list">
 
             <li class="form__basic-item text-field">
               <label class="text-field__label" for="username">Имя:*</label>
-              <input class="text-field__input text-field__input" type="text" id="username" placeholder="барсик" required>
+              <input class="text-field__input" type="text" id="username" placeholder="барсик" required>
             </li>
 
             <li class="form__basic-item text-field">
               <label class="text-field__label" for="weight">Вес (кг):*</label>
-              <input class="text-field__input text-field__input" type="text" id="weight" placeholder="7" required>
+              <input class="text-field__input" type="text" id="weight" placeholder="7" required>
             </li>
 
             <li class="form__basic-item text-field">
               <label class="text-field__label" for="age">Возраст (лет):</label>
-              <input class="text-field__input text-field__input" type="text" id="age" placeholder="7">
+              <input class="text-field__input" type="text" id="age" placeholder="7">
             </li>
           </ul>
 
-          <ul class="form__programm">
+          <ul class="form__programm-list">
             <li class="radio">
               <input class="radio__input visually-hidden" id="losing-weight" type="radio" name="weight-program" checked>
               <label class="radio__label" for="losing-weight">похудение</label>
@@ -106,7 +107,63 @@
               <label class="radio__label" for="advice">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
-        </div>
+        </section>
+
+        <section class="form__contacts">
+          <h2 class="line-title">Контактные данные<br class="br br--mobile">(владельца кота)</h2>
+
+          <ul class="form__contacts-list">
+            <li class="form__contacts-item text-field">
+              <label class="text-field__label" for="email">E-mail:*</label>
+              <input class="text-field__input text-field__input--icon" type="text" id="email" placeholder="kuklachev@gmail.com" required>
+              <svg class="text-field__icon">
+                <use xlink:href="#icon-email"></use>
+              </svg>
+            </li>
+
+            <li class="form__contacts-item text-field">
+              <label class="text-field__label" for="phone">Телефон:*</label>
+              <input class="text-field__input text-field__input--icon" type="text" id="phone" placeholder="8 (960) 900-60-90" required>
+              <svg class="text-field__icon">
+                <use xlink:href="#icon-email"></use>
+              </svg>
+            </li>
+          </ul>
+        </section>
+
+        <section class="form__comment">
+          <h2 class="line-title">Комментарий</h2>
+          <p class="text-field">
+            <label class="visually-hidden" for="comment">Телефон:*</label>
+            <textarea class="form__field-comment text-field__input text-field__input--textarea" name="comment" id="comment" placeholder="Расскажите обо всех повАдках кота"></textarea>
+          </p>
+        </section>
+
+        <section class="form__additional">
+          <h2 class="line-title">Дополнительно</h2>
+
+          <ul class="form__additional-list">
+            <li class="checkbox">
+              <input class="checkbox__input visually-hidden" id="sugar-substitute" type="checkbox" checked>
+              <label class="checkbox__label" for="sugar-substitute">сахарозаменитель</label>
+            </li>
+
+            <li class="checkbox">
+              <input class="checkbox__input visually-hidden" id="water" type="checkbox">
+              <label class="checkbox__label" for="water">питьевая вода</label>
+            </li>
+
+            <li class="checkbox">
+              <input class="checkbox__input visually-hidden" id="milk" type="checkbox">
+              <label class="checkbox__label" for="milk">молоко</label>
+            </li>
+
+            <li class="form__additional-item">
+              <input class="checkbox__input visually-hidden" id="vitamins" type="checkbox">
+              <label class="checkbox__label" for="vitamins">витамины</label>
+            </li>
+          </ul>
+        </section>
       </form>
     </main>
 
@@ -158,7 +215,7 @@
         <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__text">HTML Academy</p>
           <svg class="copyright__icon" width="27" height="34">
-            <use xlik:href="#icon-htmlacademy"></use>
+            <use xlink:href="#icon-htmlacademy"></use>
           </svg>
         </a>
       </div>
