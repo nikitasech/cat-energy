@@ -63,6 +63,51 @@
     </header>
 
     <main>
+
+      <form class="form" action="">
+        <h1 class="form__title title container">Подбор программы</h1>
+        <p class="form__text">
+          Заполните анкету, и мы подберем
+          программу питания для вашего кота
+        </p>
+
+        <div class="form__info">
+          <ul class="form__basic-info">
+
+            <li class="form__basic-item text-field">
+              <label class="text-field__label" for="username">Имя:*</label>
+              <input class="text-field__input text-field__input" type="text" id="username" placeholder="барсик" required>
+            </li>
+
+            <li class="form__basic-item text-field">
+              <label class="text-field__label" for="weight">Вес (кг):*</label>
+              <input class="text-field__input text-field__input" type="text" id="weight" placeholder="7" required>
+            </li>
+
+            <li class="form__basic-item text-field">
+              <label class="text-field__label" for="age">Возраст (лет):</label>
+              <input class="text-field__input text-field__input" type="text" id="age" placeholder="7">
+            </li>
+          </ul>
+
+          <ul class="form__programm">
+            <li class="radio">
+              <input class="radio__input visually-hidden" id="losing-weight" type="radio" name="weight-program" checked>
+              <label class="radio__label" for="losing-weight">похудение</label>
+            </li>
+
+            <li class="radio">
+              <input class="radio__input visually-hidden" id="gain-weight" type="radio" name="weight-program">
+              <label class="radio__label" for="gain-weight">набор массы</label>
+            </li>
+
+            <li class="radio">
+              <input class="radio__input visually-hidden" id="advice" type="radio" name="weight-program">
+              <label class="radio__label" for="advice">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </div>
+      </form>
     </main>
 
     <footer class="main-footer">
