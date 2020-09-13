@@ -5,17 +5,17 @@
 .demo__pictures {
   margin-bottom: 28px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 5px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 27px;
   }
 }
 
 .demo__img {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 690px;
     height: 517px;
     padding-left: 15px;

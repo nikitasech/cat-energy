@@ -8,10 +8,7 @@
   text-align: center;
   color: $white;
 
-  background-image: url("../img/index-background-mobile@1x.jpg"),
-  linear-gradient($dark-green 0 55%, $white 55%);
-  // FIXME: Background image and color not synced
-  // =======================================
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient($dark-green 0 55%, $white 55%);
   background-repeat: no-repeat;
   background-position: center top;
 
@@ -34,8 +31,7 @@
     margin-bottom: 80px;
     padding-top: 172px;
 
-    background-image: url("../img/index-background-desktop@1x.jpg"),
-    linear-gradient(to right, transparent 0 50%, $dark-green 50%);
+    background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, transparent 0 50%, $dark-green 50%);
     // (Ширина экрана - ширина контентной области) / 2
     // Таким образом получаем независимый
     // от размера экрана отступ
