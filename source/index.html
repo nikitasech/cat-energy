@@ -4,31 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Pixel Glass -->
-    <style>
-      html {
-        background-image: url(".pixel-glass/index-mobile.png");
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-      }
-      @media (min-width: 768px) {
-        html {
-          background-image: url(".pixel-glass/index-tablet.png");
-        }
-      }
-      @media (min-width: 1440px) {
-        html {
-          background-image: url(".pixel-glass/index-desktop.png");
-        }
-      }
-
-    </style>
-    <link href=".pixel-glass/styles.css" rel="stylesheet">
-    <script src=".pixel-glass/script.js"></script>
-    <!-- // Pixel Glass -->
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=fe3e40a5-100b-455b-a18f-3c5d4dd46059&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=fe3e40a5-100b-455b-a18f-3c5d4dd46059&lang=ru_RU"></script>
   </head>
   <body>
     <header class="main-header">
@@ -42,7 +19,7 @@
         </a>
 
         <!-- При открытом состоянии навигации: main-header__menu-toggle--cross -->
-        <button class="main-header__menu-toggle main-header__menu-toggle--cross" type="button">
+        <button class="main-header__menu-toggle main-header__menu-toggle--no-js" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
@@ -72,9 +49,13 @@
         <p class="preview__text">Занялся собой? Займись котом!</p>
 
         <picture class="preview__picture">
-          <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-          <img class="preview__image" src="img/index-can-mobile@1x.png" alt="Куриный доширак для кота" width="280" height="270">
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/index-can-mobile@1x.png 1x, img/index-can-mobile@2x.webp 2x">
+
+          <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+          <img class="preview__image" src="img/index-can-mobile@1x.png 1x, img/index-can-mobile@2x.png 2x" alt="Куриный доширак для кота" width="280" height="270">
         </picture>
 
         <button class="preview__button button" type="button">Подобрать программу</button>
@@ -151,15 +132,21 @@
           <div class="demo__pictures">
             <div class="example__before-img demo__img-container demo__img-container--before">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-                <img class="demo__img demo__img--before" src="img/before-mobile@1x.png" alt="Жирный кот до питания CatEnergy" width="320" height="240">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.png 1x, img/before-mobile@2x.webp 2x">
+
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img class="demo__img demo__img--before" src="img/before-mobile@1x.png 1x, img/before-mobile@2x.png 2x" alt="Жирный кот до питания CatEnergy" width="320" height="240">
               </picture>
             </div>
 
             <div class="example__after-img example__after-img demo__img-container demo__img-container--after">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
-                <img class="demo__img demo__img--after" src="img/after-mobile@1x.png" alt="Обезжиренный кот после питания CatEnergy" width="320" height="240">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/after-mobile@1x.png 1x, img/after-mobile@2x.webp 2x">
+
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <img class="demo__img demo__img--after" src="img/after-mobile@1x.png 1x, img/after-mobile@2x.png 2x" alt="Обезжиренный кот после питания CatEnergy" width="320" height="240">
               </picture>
             </div>
           </div>
@@ -226,11 +213,12 @@
         <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__text">HTML Academy</p>
           <svg class="copyright__icon" width="27" height="34">
-            <use xlik:href="#icon-htmlacademy"></use>
+            <use xlink:href="#icon-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </footer>
+    <script src="js/menu.js"></script>
     <script src="js/map.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/demo.js"></script>
