@@ -1,13 +1,13 @@
 .line-title {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 20px;
 
   font-weight: 400;
   font-size: 24px;
-  line-height: 36px;
+  line-height: 26px;
   font-family: "Oswald", "Arial", sans-serif;
   color: #000000;
 
@@ -17,13 +17,14 @@
     display: block;
     flex-grow: 1;
     height: 2px;
-    margin-top: 7px;
+    margin-top: 17px;
     margin-left: 22px;
 
     background-color: $light-green;
   }
 
   @media (min-width: $tablet-width) {
+    align-items: center;
     padding-left: 0;
 
     font-size: 36px;

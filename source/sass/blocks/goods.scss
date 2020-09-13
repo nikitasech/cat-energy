@@ -2,6 +2,7 @@
   @media (min-width: $tablet-width) {
     @include tablet-container;
   }
+
   @media (min-width: $desktop-width) {
     @include desktop-container;
   }

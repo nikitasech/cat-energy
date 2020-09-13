@@ -5,6 +5,7 @@
   font-size: 16px;
   line-height: 18px;
   font-family: "Oswald", "Arial", sans-serif;
+  color: #000000;
   text-transform: uppercase;
 
   &::before {
@@ -40,7 +41,7 @@
 
 .checkbox__input:checked + .checkbox__label::before {
   background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: 18px 14px;
-  background-repeat: no-repeat;
 }

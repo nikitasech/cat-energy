@@ -160,7 +160,11 @@
 .example__demo {
   z-index: 1;
 
-  padding-bottom: 70px;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 70px;
+  }
 }
 
 

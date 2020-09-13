@@ -11,11 +11,12 @@
       html {
         background-image: url(".pixel-glass/form-mobile.jpg");
         background-repeat: no-repeat;
-        background-position: 50% 0;
+        background-position: 50% 10px;
       }
       @media (min-width: 768px) {
         html {
           background-image: url(".pixel-glass/form-tablet.jpg");
+          background-position: 50% 0;
         }
       }
       @media (min-width: 1440px) {
@@ -28,6 +29,7 @@
     <link href=".pixel-glass/styles.css" rel="stylesheet">
     <script src=".pixel-glass/script.js"></script>
     <!-- // Pixel Glass -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=fe3e40a5-100b-455b-a18f-3c5d4dd46059&lang=ru_RU" type="text/javascript"></script>
   </head>
   <body>
     <header class="main-header">
@@ -63,7 +65,6 @@
     </header>
 
     <main>
-
       <form class="form" action="">
         <h1 class="form__title title container">Подбор программы</h1>
         <p class="form__text">
@@ -92,17 +93,17 @@
           </ul>
 
           <ul class="form__programm-list">
-            <li class="radio">
+            <li class="form__programm-item radio">
               <input class="radio__input visually-hidden" id="losing-weight" type="radio" name="weight-program" checked>
               <label class="radio__label" for="losing-weight">похудение</label>
             </li>
 
-            <li class="radio">
+            <li class="form__programm-item radio">
               <input class="radio__input visually-hidden" id="gain-weight" type="radio" name="weight-program">
               <label class="radio__label" for="gain-weight">набор массы</label>
             </li>
 
-            <li class="radio">
+            <li class="form__programm-item radio">
               <input class="radio__input visually-hidden" id="advice" type="radio" name="weight-program">
               <label class="radio__label" for="advice">Не знаю (Нужен ваш совет)</label>
             </li>
@@ -110,7 +111,7 @@
         </section>
 
         <section class="form__contacts">
-          <h2 class="line-title">Контактные данные<br class="br br--mobile">(владельца кота)</h2>
+          <h2 class="form__contacts-title line-title">Контактные данные<br class="br br--mobile"> (владельца кота)</h2>
 
           <ul class="form__contacts-list">
             <li class="form__contacts-item text-field">
@@ -132,44 +133,49 @@
         </section>
 
         <section class="form__comment">
-          <h2 class="line-title">Комментарий</h2>
-          <p class="text-field">
+          <h2 class="form__comment-title line-title">Комментарий</h2>
+          <p class="form__comment-container text-field">
             <label class="visually-hidden" for="comment">Телефон:*</label>
             <textarea class="form__field-comment text-field__input text-field__input--textarea" name="comment" id="comment" placeholder="Расскажите обо всех повАдках кота"></textarea>
           </p>
         </section>
 
         <section class="form__additional">
-          <h2 class="line-title">Дополнительно</h2>
+          <h2 class="form__additional-title line-title">Дополнительно</h2>
 
           <ul class="form__additional-list">
-            <li class="checkbox">
+            <li class="form__additional-item checkbox">
               <input class="checkbox__input visually-hidden" id="sugar-substitute" type="checkbox" checked>
               <label class="checkbox__label" for="sugar-substitute">сахарозаменитель</label>
             </li>
 
-            <li class="checkbox">
+            <li class="form__additional-item checkbox">
               <input class="checkbox__input visually-hidden" id="water" type="checkbox">
               <label class="checkbox__label" for="water">питьевая вода</label>
             </li>
 
-            <li class="checkbox">
+            <li class="form__additional-item checkbox">
               <input class="checkbox__input visually-hidden" id="milk" type="checkbox">
               <label class="checkbox__label" for="milk">молоко</label>
             </li>
 
-            <li class="form__additional-item">
+            <li class="form__additional-item checkbox">
               <input class="checkbox__input visually-hidden" id="vitamins" type="checkbox">
               <label class="checkbox__label" for="vitamins">витамины</label>
             </li>
           </ul>
         </section>
+
+        <div class="form__final">
+          <a class="form__final-button button" href="">отправить заявку</a>
+          <p class="form__final-text">* — Обязательные поля</p>
+        </div>
       </form>
     </main>
 
     <footer class="main-footer">
       <div class="main-footer__dealers dealers container">
-        <p class="dealers__text">приглашаем <br class="br--tablet br--desktop">к сотрудничеству дилеров!</p>
+        <p class="dealers__text">приглашаем <br class="br">к сотрудничеству дилеров!</p>
         <p class="dealers__address">
           <span class="dealers__main-address">ул. Большая Конюшенная, д. 19/8</span>
           Санкт-Петербург
@@ -220,5 +226,7 @@
         </a>
       </div>
     </footer>
+
+    <script src="js/map.js"></script>
   </body>
 </html>

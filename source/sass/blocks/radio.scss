@@ -41,8 +41,16 @@
 
 .radio__input:checked + .radio__label::before {
   background-image: radial-gradient(circle at center, $dark-green 7px, white 7px);
+
+  @media (min-width: $tablet-width) {
+    background-image: radial-gradient(circle at center, $dark-green 9px, white 9px);
+  }
 }
 
 .radio__input:checked:active + .radio__label::before {
   background-image: radial-gradient(circle at center, rgba($dark-green, 0.3) 7px, white 7px);
+
+  @media (min-width: $tablet-width) {
+    background-image: radial-gradient(circle at center, $dark-green 9px, white 9px);
+  }
 }
