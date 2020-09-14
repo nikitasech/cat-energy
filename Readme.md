@@ -22,7 +22,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
 
-#### 2. Создайте форк
+#### 2. Создайте форк  
 
 [Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/645003-cat-energy-20) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
 
