@@ -22,13 +22,13 @@
           </picture>
         </a>
 
-        <!-- При открытом состоянии навигации: main-header__menu-toggle-'-cross (Между двуя тире ковычка, чтобы не ругался валидатор) -->
+        <!-- При открытом состоянии навигации: main-header__menu-toggle-'-cross (Между двуя тире кавычка, чтобы не ругался валидатор) -->
         <button class="main-header__menu-toggle main-header__menu-toggle--no-js" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
 
-      <!-- При закрытом состоянии: main-header__nav-'-closed (Между двуя тире ковычка, чтобы не ругался валидатор) -->
+      <!-- При закрытом состоянии: main-header__nav-'-closed (Между двуя тире кавычка, чтобы не ругался валидатор) -->
       <nav class="main-header__nav nav">
         <ul class="nav__list">
           <li class="nav__item">
@@ -58,33 +58,33 @@
 
             <li class="form__basic-item text-field">
               <label class="text-field__label" for="username">Имя:*</label>
-              <input class="text-field__input" type="text" id="username" placeholder="барсик" required>
+              <input class="text-field__input" type="text" id="username" name="user-cat-name" placeholder="барсик" required>
             </li>
 
             <li class="form__basic-item text-field">
               <label class="text-field__label" for="weight">Вес (кг):*</label>
-              <input class="text-field__input" type="text" id="weight" placeholder="7" required>
+              <input class="text-field__input" type="text" id="weight" name="user-cat-weight" placeholder="7" required>
             </li>
 
             <li class="form__basic-item text-field">
               <label class="text-field__label" for="age">Возраст (лет):</label>
-              <input class="text-field__input" type="text" id="age" placeholder="7">
+              <input class="text-field__input" type="text" id="age" name="user-cat-age" placeholder="7">
             </li>
           </ul>
 
           <ul class="form__programm-list">
             <li class="form__programm-item radio">
-              <input class="radio__input visually-hidden" id="losing-weight" type="radio" name="weight-program" checked>
+              <input class="radio__input visually-hidden" id="losing-weight" type="radio" name="weight-program" value="losing-weight" checked>
               <label class="radio__label" for="losing-weight">похудение</label>
             </li>
 
             <li class="form__programm-item radio">
-              <input class="radio__input visually-hidden" id="gain-weight" type="radio" name="weight-program">
+              <input class="radio__input visually-hidden" id="gain-weight" type="radio" name="weight-program" value="gain-weight">
               <label class="radio__label" for="gain-weight">набор массы</label>
             </li>
 
             <li class="form__programm-item radio">
-              <input class="radio__input visually-hidden" id="advice" type="radio" name="weight-program">
+              <input class="radio__input visually-hidden" id="advice" type="radio" name="weight-program" value="advice">
               <label class="radio__label" for="advice">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
@@ -96,7 +96,7 @@
           <ul class="form__contacts-list">
             <li class="form__contacts-item text-field">
               <label class="text-field__label" for="email">E-mail:*</label>
-              <input class="text-field__input text-field__input--icon" type="text" id="email" placeholder="kuklachev@gmail.com" required>
+              <input class="text-field__input text-field__input--icon" type="text" id="email" name="user-email" placeholder="kuklachev@gmail.com" required>
               <svg class="text-field__icon" width="20" height="20">
                 <use xlink:href="#icon-mail"></use>
               </svg>
@@ -104,7 +104,7 @@
 
             <li class="form__contacts-item text-field">
               <label class="text-field__label" for="phone">Телефон:*</label>
-              <input class="text-field__input text-field__input--icon" type="text" id="phone" placeholder="8 (960) 900-60-90" required>
+              <input class="text-field__input text-field__input--icon" type="text" id="phone" name="user-phone" placeholder="8 (960) 900-60-90" required>
               <svg class="text-field__icon" width="20" height="20">
                 <use xlink:href="#icon-phone"></use>
               </svg>
@@ -125,29 +125,29 @@
 
           <ul class="form__additional-list">
             <li class="form__additional-item checkbox">
-              <input class="checkbox__input visually-hidden" id="sugar-substitute" type="checkbox" checked>
+              <input class="checkbox__input visually-hidden" id="sugar-substitute" type="checkbox" name="sugar-substitute" checked>
               <label class="checkbox__label" for="sugar-substitute">сахарозаменитель</label>
             </li>
 
             <li class="form__additional-item checkbox">
-              <input class="checkbox__input visually-hidden" id="water" type="checkbox">
+              <input class="checkbox__input visually-hidden" id="water" type="checkbox" name="water">
               <label class="checkbox__label" for="water">питьевая вода</label>
             </li>
 
             <li class="form__additional-item checkbox">
-              <input class="checkbox__input visually-hidden" id="milk" type="checkbox">
+              <input class="checkbox__input visually-hidden" id="milk" type="checkbox" name="milk">
               <label class="checkbox__label" for="milk">молоко</label>
             </li>
 
             <li class="form__additional-item checkbox">
-              <input class="checkbox__input visually-hidden" id="vitamins" type="checkbox">
+              <input class="checkbox__input visually-hidden" id="vitamins" type="checkbox" name="vitamins">
               <label class="checkbox__label" for="vitamins">витамины</label>
             </li>
           </ul>
         </section>
 
         <div class="form__final">
-          <a class="form__final-button button" href="">отправить заявку</a>
+          <input class="form__final-button button" type="submit" value="отправить заявку">
           <p class="form__final-text">* — Обязательные поля</p>
         </div>
       </form>

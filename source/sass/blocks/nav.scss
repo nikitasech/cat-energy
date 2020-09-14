@@ -49,10 +49,6 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  &--selected {
-    cursor: default;
-  }
-
   &:hover {
     opacity: 0.6;
   }
@@ -62,6 +58,8 @@
   }
 
   &--selected {
+    cursor: default;
+
     &:hover {
       opacity: 1;
     }
