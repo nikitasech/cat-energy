@@ -1,19 +1,39 @@
 .br {
-  display: none;
-
-  @media (max-width: $tablet-width) {
-    &--mobile {
-      display: block;
-    }
+  &--mobile {
+    display: block;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--mobile {
+      display: none;
+    }
+
     &--tablet {
       display: block;
+    }
+
+    &--desktop {
+      display: none;
     }
   }
 
   @media (min-width: $desktop-width) {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: none;
+    }
+
     &--desktop {
       display: block;
     }

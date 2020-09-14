@@ -1,6 +1,7 @@
 .social {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -9,26 +10,67 @@
 }
 
 .social__item:not(:last-child) {
-  margin-right: 32px;
+  margin-right: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 29px;
+  }
 }
 
 .social__link {
   display: block;
-  width: 23px;
-  height: 23px;
+}
 
-  background-color: #666666; // Для наглядности
-  background-clip: content-box; // Для наглядности
+.social__icon {
+  fill: $dark-grey;
+
+  &--vk {
+    width: 22px;
+    height: 13px;
+  }
+
+  &--insta {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--fb {
+    width: 11px;
+    height: 19px;
+
+    stroke: $dark-grey;
+
+    &:hover {
+      stroke: $light-green;
+    }
+
+    &:active {
+      fill-opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--vk {
+      width: 28px;
+      height: 17px;
+    }
+
+    &--insta {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 15px;
+      height: 28px;
+    }
+  }
 
   &:hover {
-    background-color: #68b738; // Для наглядности
-
-    fill: #68b738;
+    fill: $light-green;
   }
 
   &:active {
-    background-color: rgba(#68b738, 0.3); // Для наглядности
-
     fill-opacity: 0.3;
   }
 }

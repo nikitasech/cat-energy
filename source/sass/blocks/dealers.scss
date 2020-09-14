@@ -1,0 +1,73 @@
+.dealers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 28px;
+  padding-bottom: 22px;
+
+  &--bg-white {
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 62px;
+    padding-right: 72px;
+    padding-bottom: 58px;
+    padding-left: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    width: 570px;
+    padding-right: 85px;
+    padding-left: 75px;
+
+    background-color: $white;
+  }
+}
+
+.dealers__text {
+  width: 140px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 16px;
+  line-height: 21px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #111111;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 175px;
+
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+.dealers__address {
+  width: 140px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 160px;
+
+    font-size: 16px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.dealers__main-address {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-bottom: 20px;
+  }
+}

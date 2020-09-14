@@ -6,11 +6,12 @@
   color: $light-black;
   text-decoration: none;
 
-  // .copyright__icon для наглядности
-  &:hover .copyright__icon {
-    background-color: #68b738; // Для наглядности
+  .copyright__icon {
+    fill: $dark-grey;
+  }
 
-    fill: #68b738;
+  &:hover .copyright__icon {
+    fill: $light-green;
   }
 
   &:active {
@@ -24,8 +25,4 @@
 
   font-size: 16px;
   line-height: 18px;
-}
-
-.copyright__icon {
-  background-color: #666666; // Для наглядности
 }

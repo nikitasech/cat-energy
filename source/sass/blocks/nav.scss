@@ -30,9 +30,9 @@
   @media (min-width: $tablet-width) {
     border-top: none;
 
-  &:last-child {
-    border-bottom: none;
-  }
+    &:last-child {
+      border-bottom: none;
+    }
   }
 }
 
@@ -49,8 +49,24 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &--selected {
     cursor: default;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 1;
+    }
   }
 
   @media (min-width: $tablet-width) {
