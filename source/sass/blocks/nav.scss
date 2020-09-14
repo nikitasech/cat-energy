@@ -53,6 +53,24 @@
     cursor: default;
   }
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--selected {
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 0;
     padding-bottom: 7px;

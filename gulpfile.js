@@ -18,6 +18,11 @@ var server = require('browser-sync').create();
 var del = require('del');
 var imageResize = require('gulp-image-resize');
 
+gulp.task('pixelGlass', function() {
+  return gulp.src('source/.pixel-glass/*')
+    .pipe(gulp.dest('build/.pixel-glass'));
+});
+
 gulp.task('html', function() {
   return gulp.src('source/*.html')
     .pipe(posthtml([
@@ -112,7 +117,7 @@ gulp.task('build', gulp.series(
   'copy',
   'css',
   'sprite',
-  'html'
+  'html',
 ));
 
 gulp.task('refresh', function(done) {

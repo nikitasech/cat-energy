@@ -8,8 +8,12 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=fe3e40a5-100b-455b-a18f-3c5d4dd46059&lang=ru_RU"></script>
   </head>
   <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <header class="main-header">
-      <div class="main-header__inner container">
+      <div class="main-header__inner main-header__inner--form container">
         <a class="main-header__image-logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
@@ -93,16 +97,16 @@
             <li class="form__contacts-item text-field">
               <label class="text-field__label" for="email">E-mail:*</label>
               <input class="text-field__input text-field__input--icon" type="text" id="email" placeholder="kuklachev@gmail.com" required>
-              <svg class="text-field__icon">
-                <use xlink:href="#icon-email"></use>
+              <svg class="text-field__icon" width="20" height="20">
+                <use xlink:href="#icon-mail"></use>
               </svg>
             </li>
 
             <li class="form__contacts-item text-field">
               <label class="text-field__label" for="phone">Телефон:*</label>
               <input class="text-field__input text-field__input--icon" type="text" id="phone" placeholder="8 (960) 900-60-90" required>
-              <svg class="text-field__icon">
-                <use xlink:href="#icon-email"></use>
+              <svg class="text-field__icon" width="20" height="20">
+                <use xlink:href="#icon-phone"></use>
               </svg>
             </li>
           </ul>
@@ -162,32 +166,32 @@
 
       <div class="main-footer__container container">
         <a class="main-footer__logo-link" href="index.html">
-          <img class="main-footer__logo text-logo" src="img/logo-footer.svg" alt="Логотип Cat Energy" width="128" height="24">
+          <img class="main-footer__logo logo logo--text" src="img/logo-footer.svg" alt="Логотип Cat Energy" width="128" height="24">
         </a>
 
         <ul class="main-footer__social social">
           <li class="social__item">
             <a class="social__link" href="https://vk.com">
               <p class="visually-hidden">Вконтакте</p>
-              <svg class="social__icon" width="23" height="23">
+              <svg class="social__icon social__icon--vk" width="22" height="13">
                 <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
           </li>
 
           <li class="social__item">
-            <a class="social__link" href="https://www.fb.com">
+            <a class="social__link" href="https://www.instagram.com">
               <p class="visually-hidden">Instagram</p>
-              <svg class="social__icon" width="23" height="23">
+              <svg class="social__icon social__icon--insta" width="16" height="16">
                 <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
 
           <li class="social__item">
-            <a class="social__link" href="https://www.instagram.com">
+            <a class="social__link" href="https://www.fb.com">
               <p class="visually-hidden">Facebook</p>
-              <svg class="social__icon" width="23" height="23">
+              <svg class="social__icon social__icon--fb" width="11" height="19">
                 <use xlink:href="#icon-fb"></use>
               </svg>
             </a>

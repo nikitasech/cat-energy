@@ -66,11 +66,17 @@
 
 .main-footer__social {
   margin-bottom: 20px;
+  margin-left: -10px;
   padding-top: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    margin-left: 15px;
     padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 25px;
   }
 }
 
