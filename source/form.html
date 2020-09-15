@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>HTML Academy: Кэт энерджи - Подбор программы</title>
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
+    <title>HTML Academy: Кэт энерджи - Подбор программы</title>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=fe3e40a5-100b-455b-a18f-3c5d4dd46059&lang=ru_RU"></script>
   </head>
   <body>
@@ -13,7 +15,7 @@
     </div>
 
     <header class="main-header">
-      <div class="main-header__inner main-header__inner--form container">
+      <div class="main-header__inner main-header__inner--form">
         <a class="main-header__image-logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
@@ -91,12 +93,15 @@
         </section>
 
         <section class="form__contacts">
-          <h2 class="form__contacts-title line-title">Контактные данные<br class="br br--mobile"> (владельца кота)</h2>
+          <h2 class="form__contacts-title line-title">
+            Контактные данные&nbsp;
+            <br class="br br--mobile">(владельца кота)
+          </h2>
 
           <ul class="form__contacts-list">
             <li class="form__contacts-item text-field">
               <label class="text-field__label" for="email">E-mail:*</label>
-              <input class="text-field__input text-field__input--icon" type="text" id="email" name="user-email" placeholder="kuklachev@gmail.com" required>
+              <input class="text-field__input text-field__input--icon" type="email" id="email" name="user-email" placeholder="kuklachev@gmail.com" required>
               <svg class="text-field__icon" width="20" height="20">
                 <use xlink:href="#icon-mail"></use>
               </svg>
@@ -104,7 +109,7 @@
 
             <li class="form__contacts-item text-field">
               <label class="text-field__label" for="phone">Телефон:*</label>
-              <input class="text-field__input text-field__input--icon" type="text" id="phone" name="user-phone" placeholder="8 (960) 900-60-90" required>
+              <input class="text-field__input text-field__input--icon" type="tel" pattern="[0-9]{9,15}" id="phone" name="user-phone" placeholder="8 (960) 900-60-90" required>
               <svg class="text-field__icon" width="20" height="20">
                 <use xlink:href="#icon-phone"></use>
               </svg>
@@ -162,7 +167,17 @@
         </p>
       </div>
 
-      <div class="main-footer__map" id="map"></div>
+      <div class="main-footer__map" id="map">
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+
+          <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img class="main-footer__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта местности" width="320" height="362">
+        </picture>
+      </div>
 
       <div class="main-footer__container container">
         <a class="main-footer__logo-link" href="index.html">
