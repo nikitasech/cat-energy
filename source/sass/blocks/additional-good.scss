@@ -94,18 +94,21 @@
 
   @media (min-width: $desktop-width) {
     min-width: auto;
+
     text-align: left;
   }
 }
 
 .additional-good__button {
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   font-size: 16px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
   }
 
   @media (min-width: $desktop-width) {

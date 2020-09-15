@@ -31,6 +31,10 @@
   }
 }
 
+.radio__input:hover + .radio__label::before {
+  box-shadow: inset 0 0 0 1px #bababa;
+}
+
 .radio__input:active + .radio__label {
   color: rgba(#000000, 0.3);
 
