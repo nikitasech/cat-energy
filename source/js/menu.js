@@ -21,9 +21,9 @@
 
   menuElement.classList.add('main-header__nav--closed');
   menuToggleElement.classList.remove('main-header__menu-toggle--no-js');
-  window.onload = function () {
+  window.addEventListener('load', function () {
     menuElement.classList.add('main-header__nav--animation');
-  };
+  });
 
   menuToggleElement.addEventListener('click', onToggleMenuClick);
   menuToggleElement.addEventListener('keydown', onToggleMenuPressEnter);

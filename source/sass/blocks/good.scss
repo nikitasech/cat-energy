@@ -70,7 +70,6 @@
   font-size: 16px;
   line-height: 20px;
   font-family: "Oswald", "Arial", sans-serif;
-  color: $dark-black;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -90,6 +89,11 @@
 
     line-height: 22px;
   }
+}
+
+.good__title-link {
+  color: $dark-black;
+  text-decoration: none;
 }
 
 .good__table {

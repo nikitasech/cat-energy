@@ -3,6 +3,7 @@
 var gulp = require('gulp');
 var htmlmin = require('gulp-htmlmin');
 var concat = require('gulp-concat');
+var gcmq = require('gulp-group-css-media-queries');
 var uglify = require('gulp-uglify-es').default;
 var plumber = require('gulp-plumber');
 var sourcemap = require('gulp-sourcemaps');
@@ -10,7 +11,6 @@ var sass = require('gulp-sass');
 var posthtml = require('gulp-posthtml');
 var include = require('posthtml-include');
 var postcss = require('gulp-postcss');
-var gcmq = require('gulp-group-css-media-queries');
 var autoprefixer = require('autoprefixer');
 var csso = require('gulp-csso');
 var rename = require('gulp-rename');
@@ -36,15 +36,9 @@ gulp.task('html', function() {
 
 
 gulp.task('js', function() {
-  return gulp.src([
-    'source/js/menu.js',
-    'source/js/slider.js',
-    'source/js/demo.js',
-    'source/js/map.js'
-  ])
+  return gulp.src('source/js/**/*.js')
     .pipe(sourcemap.init())
     .pipe(uglify())
-    .pipe(concat('script.min.js'))
     .pipe(sourcemap.write(''))
     .pipe(gulp.dest('build/js'));
 });
@@ -130,7 +124,7 @@ gulp.task('build', gulp.series(
   'sprite',
   'html',
   'css',
-  'js'
+  'js',
 ));
 
 gulp.task('refresh', function(done) {

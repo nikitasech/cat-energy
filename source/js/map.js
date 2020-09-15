@@ -1,6 +1,6 @@
 (function () {
   const PIN_COORDIATES = [59.93825746, 30.32295280];
-  let centerMapCoordinates = [59.93825746, 30.32295280];
+  let centerMapCoordinates = [59.938807, 30.322953];
 
   const IconSize = {
     WIDTH: 56,
@@ -19,6 +19,8 @@
 
   if (innerWidth >= DisplayWidth.DESKTOP) {
     centerMapCoordinates = [59.938667, 30.317824];
+  } else if (innerWidth < DisplayWidth.TABLET) {
+    centerMapCoordinates = [59.938419, 30.322953];
   }
 
   ymaps.ready(init);
