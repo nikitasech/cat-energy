@@ -1,8 +1,4 @@
 .br {
-  &--mobile {
-    display: block;
-  }
-
   &--tablet {
     display: none;
   }
@@ -11,17 +7,21 @@
     display: none;
   }
 
+  &--mobile {
+    display: block;
+  }
+
   @media (min-width: $tablet-width) {
     &--mobile {
       display: none;
     }
 
-    &--tablet {
-      display: block;
-    }
-
     &--desktop {
       display: none;
+    }
+
+    &--tablet {
+      display: block;
     }
   }
 
