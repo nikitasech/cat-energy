@@ -30,16 +30,35 @@
 }
 
 .main-footer__map {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
   height: 362px;
   margin-bottom: 40px;
 
-  background-color: #000000;
+  background-color: #b0b1c7;
 
   @media (min-width: $tablet-width) {
     height: 400px;
     margin-bottom: 54px;
 
     grid-column: 1 / 4;
+  }
+}
+
+.main-footer__map-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
   }
 }
 
