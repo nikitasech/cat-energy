@@ -31,6 +31,7 @@
   }
 }
 
+.radio__input:focus + .radio__label::before,
 .radio__input:hover + .radio__label::before {
   box-shadow: inset 0 0 0 1px #bababa;
 }

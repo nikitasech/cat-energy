@@ -31,9 +31,11 @@
   }
 }
 
+.checkbox__input:focus + .checkbox__label::before,
 .checkbox__input:hover + .checkbox__label::before {
   box-shadow: inset 0 0 0 1px #bababa;
 }
+
 
 .checkbox__input:active + .checkbox__label {
   color: rgba(#000000, 0.3);
