@@ -1,24 +1,26 @@
 'use strict';
 
 var gulp = require('gulp');
+var rename = require('gulp-rename');
+var del = require('del');
+var server = require('browser-sync').create();
+
+var posthtml = require('gulp-posthtml');
 var htmlmin = require('gulp-htmlmin');
-var concat = require('gulp-concat');
-var gcmq = require('gulp-group-css-media-queries');
+var include = require('posthtml-include');
+
 var uglify = require('gulp-uglify-es').default;
+
+var sass = require('gulp-sass');
 var plumber = require('gulp-plumber');
 var sourcemap = require('gulp-sourcemaps');
-var sass = require('gulp-sass');
-var posthtml = require('gulp-posthtml');
-var include = require('posthtml-include');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var csso = require('gulp-csso');
-var rename = require('gulp-rename');
+
 var imagemin = require('gulp-imagemin');
 var webp = require('gulp-webp');
 var svgstore = require('gulp-svgstore');
-var server = require('browser-sync').create();
-var del = require('del');
 
 gulp.task('pixelglass', function() {
   return gulp.src('source/.pixel-glass/*')
